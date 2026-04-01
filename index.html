@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamalesh Chaudhary | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class='bx bx-chart-bar'></i></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Analyzing data...</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class='bx bx-chart-bar'> Kamalesh</i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class='bx bx-moon'></i>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg-pattern">
+            <div class="grid-pattern"></div>
+            <div class="floating-chart">
+                <canvas id="miniChart1"></canvas>
+            </div>
+            <div class="floating-chart chart-2">
+                <canvas id="miniChart2"></canvas>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <i class='bx bx-search'></i>
+                    <span>Data Analyst</span>
+                </div>
+                <h1 class="name">Kamalesh <span class="highlight">Chaudhary</span></h1>
+                <p class="tagline">Transforming raw data into actionable insights through visualization and analysis</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class='bx bx-folder-open'></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">0+</span>
+                        <span class="stat-label">Datasets Analyzed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">00+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0+</span>
+                        <span class="stat-label">Tools Mastered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="profile-pic">
+                        <img src="img/kamalesh.jpeg" alt="Kamalesh Chaudhary">
+                    </div>
+                    <div class="profile-badge">
+                        <i class='bx bx-check-circle'></i>
+                        <span>Verified Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class='bx bx-mouse'></i>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">Get To Know</span>
+            <h2>About <span>Me</span></h2>
+            <p>Turning numbers into narratives</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Data-Driven Storyteller</h3>
+                <p>I'm a passionate data analyst with a strong foundation in extracting meaningful insights from complex
+                    datasets. My expertise lies in transforming raw data into clear, actionable recommendations that
+                    drive business decisions.</p>
+                <p>I specialize in data visualization, statistical analysis, and creating dashboards that make data
+                    accessible to everyone.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <span>kamalesh.pgn12@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-location-plus'></i>
+                        <div>
+                            <h4>Kathmandu</h4>
+                            <span>Nepal</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-briefcase'></i>
+                        <div>
+                            <h4>Status</h4>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-graduation'></i>
+                        <div>
+                            <h4>Focus</h4>
+                            <span>Data Analysis & Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Download Resume <i class='bx bx-download'></i></a>
+            </div>
+            <div class="about-visual">
+                <div class="skills-preview">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about  -->
+
+    <!-- skills section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <span class="section-tag">My Expertise</span>
+            <h2>Skills & <span>Tools</span></h2>
+            <p>Technologies I use to analyze and visualize data</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bxl-python'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Pandas, NumPy, Matplotlib, Seaborn for data manipulation and visualization</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-data'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <p class="skill-desc">MySQL, PostgreSQL for database management and complex queries</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-spreadsheet'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Excel</h3>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Advanced formulas, pivot tables, VBA macros, data analysis toolkit</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Power BI</h3>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Interactive dashboards, DAX measures, data modeling</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-pie-chart-alt'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Tableau</h3>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Data visualization, calculated fields, dashboard design</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="65"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-code'></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>HTML & CSS</h3>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Web scraping, data presentation, interactive dashboards</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of skills -->
+
+    <!-- projects -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <span class="section-tag">My Work</span>
+            <h2>Data <span>Projects</span></h2>
+            <p>Showcasing my analytical journey</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-visual">
+                    <canvas id="projectChart1"></canvas>
+                    <div class="project-overlay">
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class='bx bx-store'></i> E-Commerce Analytics</span>
+                    <h3>Sales Data Analysis</h3>
+                    <p>Analyzed 50,000+ transaction records to identify trends, customer segments, and revenue
+                        optimization opportunities.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Seaborn</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class='bx bx-arrow-right'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-visual">
+                    <canvas id="projectChart2"></canvas>
+                    <div class="project-overlay">
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class='bx bx-trending-up'></i> Financial Analysis</span>
+                    <h3>Investment Portfolio Dashboard</h3>
+                    <p>Built an interactive dashboard tracking portfolio performance with real-time metrics and
+                        historical comparisons.</p>
+                    <div class="project-tags">
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class='bx bx-arrow-right'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-visual">
+                    <canvas id="projectChart3"></canvas>
+                    <div class="project-overlay">
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class='bx bx-users'></i> HR Analytics</span>
+                    <h3>Employee Retention Analysis</h3>
+                    <p>Identified key factors affecting employee turnover and proposed data-driven retention strategies.
+                    </p>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Tableau</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class='bx bx-arrow-right'></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-visual">
+                    <canvas id="projectChart4"></canvas>
+                    <div class="project-overlay">
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class='bx bx-map'></i> Geographic Analysis</span>
+                    <h3>Regional Sales Mapping</h3>
+                    <p>Created heat maps and geographic visualizations to identify high-performing regions and expansion
+                        opportunities.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Folium</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class='bx bx-arrow-right'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of projects -->
+
+    <!-- contact -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Let's <span>Connect</span></h2>
+            <p>Have a project in mind? Let's discuss!</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's discuss your data needs</h3>
+                <p>I'm always open to discussing new data projects, freelance opportunities, or just having a chat about
+                    analytics.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <span>kamalesh.pgn12@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <span>+977 9818733099</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-location-plus'></i>
+                        <div>
+                            <h4>Kathmandu</h4>
+                            <span>Nepal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/kamaleshpgn12-coder" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://np.linkedin.com/in/kamalesh-chaudhary-7904a32aa" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <i class='bx bx-paper-plane'></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class='bx bx-chart-bar'></i>
+                <span>Kamalesh Chaudhary</span>
+            </div>
+            <p>Data Analyst | Turning insights into impact</p>
+            <div class="footer-social">
+                <a href="https://github.com/kamaleshpgn12-coder" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://np.linkedin.com/in/kamalesh-chaudhary-7904a32aa" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+            </div>
+            <p class="copyright">© 2026 Kamalesh Chaudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
